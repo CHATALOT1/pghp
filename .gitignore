@@ -1,0 +1,7 @@
+# API
+api/target/
+
+# Client
+client/node_modules/
+client/build/
+client/.svelte-kit/
