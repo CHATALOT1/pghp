@@ -1,5 +1,6 @@
 # API
 api/target/
+api/config/settings.toml
 
 # Client
 client/node_modules/
