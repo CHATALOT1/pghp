@@ -6,3 +6,6 @@
 
 # Port to serve the webserver on, including the API and client.
 port = 80
+
+# Absolute or relative path of the built client frontend to be served.
+client_dir = "/path/to/static/client/directory"

@@ -1,5 +1,6 @@
 use config::{Config, ConfigError, File};
 use serde::Deserialize;
+use std::path::PathBuf;
 
 const DEFAULTS_CONFIG_FILE: &str = "config/defaults.toml";
 const USER_DEFINED_CONFIG_FILE: &str = "config/settings.toml";
@@ -7,8 +8,8 @@ const USER_DEFINED_CONFIG_FILE: &str = "config/settings.toml";
 #[derive(Deserialize)]
 pub struct InstanceSettings {
     pub port: u16,
+    pub client_dir: PathBuf,
 }
-
 impl InstanceSettings {
     pub fn new() -> Result<Self, ConfigError> {
         let settings = Config::builder()
