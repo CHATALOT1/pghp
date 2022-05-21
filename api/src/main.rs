@@ -1,3 +1,4 @@
+mod api;
 mod serve_client;
 mod settings;
 
@@ -9,6 +10,7 @@ async fn main() {
     let cfg = settings::get_instance_settings();
 
     let app = Router::new()
+        .nest("/api", api::main())
         .fallback(serve_client::main(cfg.client_dir));
 
     let addr = SocketAddr::from(([0, 0, 0, 0], cfg.port));
