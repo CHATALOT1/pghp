@@ -1,0 +1,14 @@
+{
+    "dark": {
+        "primary": "#F73D93",
+        "secondary": "#16003B",
+        "text": "#413F42",
+        "header": "#7F8487"
+    },
+    "light": {
+        "primary": "#F73D93",
+        "secondary": "#aa77ff",
+        "text": "#98959a",
+        "header": "#f7f8f8"
+    }
+}
