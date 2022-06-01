@@ -26,3 +26,5 @@ pub fn get_instance_settings() -> InstanceSettings {
         Err(error) => panic!("Issue trying to initialise instance settings: {:?}", error),
     }
 }
+
+// TODO: Vastly improve this system. See https://github.com/CHATALOT1/pghp/issues/3
